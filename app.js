@@ -1,9 +1,14 @@
 // Importa Firebase y el archivo JSON languages.json
-import firebase from './firebase-config.js'; // Ruta correcta al archivo firebase-config.js
-import data from './languages.json' assert { type: "json" }; // Ruta correcta al archivo JSON languages.json
+import db from './firebase-config.js'; // Asegúrate de que la ruta sea correcta
+import 'firebase/firestore';
+import fs from 'fs';
 
 // Configura Firebase
-const db = firebase.firestore();
+// ...
+
+// Lee el archivo JSON
+const rawData = fs.readFileSync('./languages.json');
+const data = JSON.parse(rawData);
 
 // Agregar datos a Firestore
 data.forEach((idioma) => {
