@@ -1,0 +1,16 @@
+{}
+{
+    "name": "eufonia-project",
+    "version": "1.0.0",
+    "description": "Descripción de tu proyecto",
+    "main": "app.js", // Archivo principal de la aplicación (si utilizas CommonJS)
+    "type": "module", // Configuración para habilitar módulos de ES
+    "dependencies": {
+      "firebase": "^9.0.0" // Dependencias de tu proyecto, por ejemplo, la versión de Firebase que estás utilizando
+    },
+    "scripts": {
+      "start": "node app.js" // Script para iniciar tu aplicación (si utilizas CommonJS)
+    },
+    "author": "Tu nombre",
+    "license": "MIT" // Tipo de licencia de tu proyecto
+  }  
