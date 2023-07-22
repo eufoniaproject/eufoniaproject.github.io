@@ -5,7 +5,8 @@
     "main": "app.js",
     "type": "module",
     "dependencies": {
-        "firebase": "^9.23.0"
+        "firebase": "^9.23.0",
+        "ol": "^7.4.0"
     },
     "scripts": {
         "start": "node app.js"
