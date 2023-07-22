@@ -1,18 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-
-.title {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  text-align: center;
-  padding: 0px;
-  font-size: 40px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
-.subtitle {
-  font-family: 'Montserrat', sans-serif;
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+nav {
+  height: 80px;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem calc((102vw - 1300px) / 2);
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
   font-style: normal;
-  font-weight: 400;
-  text-align: center;
-  margin: 0px;
+  padding: 0 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 1.5rem;
+  transition: color 0.5s;
+}
+
+nav a:hover {
+  color: #00e0fd;
+}
+
+.hero-container {
+  background: #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 91.6vh;
+  padding: 3rem calc((106vw - 1300px) / 2);
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  padding: 0rem 0rem;
+}
+
+.column-left h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.column-left p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+button {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border: none;
+  color: #000000;
+  background: #00e0fd;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.5s; /* Transición de 1.5 segundos en el cambio de color de fondo */
+}
+
+button:hover {
+  background-color: #fff; /* Al pasar el cursor, el fondo se vuelve blanco */
+  color: #000;
+}
+
+.column-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  
+}
+
+img.hero-image {
+    size: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
 }
